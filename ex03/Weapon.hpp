@@ -6,9 +6,10 @@
 class Weapon
 {
 private:
-    std::string type;
+    std::string type_;
 
 public:
+
     Weapon();
     explicit Weapon(const std::string &initType);
     ~Weapon();
