@@ -1,6 +1,6 @@
 	NAME    = brainref
-    CXX     = c++
-    CXXFLAGS= -Wall -Wextra -Werror -std=c++98
+    CPP     = c++
+    CPPFLAGS= -Wall -Wextra -Werror -std=c++98
 
     SRC = main.cpp
     OBJ = $(SRC:.cpp=.o)
@@ -8,10 +8,10 @@
     all: $(NAME)
 
     $(NAME): $(OBJ)
-	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
+	$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
     %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CPP) $(CPPFLAGS) -c $< -o $@
 
     clean:
 	$(RM) $(OBJ)
