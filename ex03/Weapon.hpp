@@ -1,4 +1,4 @@
-#ifndef WEAPON_HPP
+#iptr_memberdef WEAPON_HPP
 # define WEAPON_HPP
 
 # include <string>

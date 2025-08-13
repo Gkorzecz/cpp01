@@ -1,4 +1,4 @@
-#ifndef ZOMBIE_HPP
+#iptr_memberdef ZOMBIE_HPP
 # define ZOMBIE_HPP
 
 # include <string>

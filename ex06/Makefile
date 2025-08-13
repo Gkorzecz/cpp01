@@ -1,8 +1,8 @@
-NAME     = stringReplace
+NAME     = HarlBotBis
 CPP      = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC      = main.cpp
+SRC      = main.cpp Harl.cpp
 OBJDIR   = obj
 OBJ      = $(addprefix $(OBJDIR)/,$(SRC:.cpp=.o))
 

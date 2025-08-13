@@ -1,2 +1,17 @@
-Salut je m'appelle Guillaume, lol !
-Super ce programme, ptdr.
+Replace portion of string
+Replaces the portion of the string that begins at character pos and spans len characters (or the part of the string in the range between [i1,i2)) by new contents:
+
+(1) string
+    Copies str.
+(2) substring
+    Copies the portion of str that begins at the character position subpos and spans sublen characters (or until the end of str, if either str is too short or if sublen is string::npos).
+(3) c-string
+    Copies the null-terminated character sequence (C-string) pointed by s.
+(4) buffer
+    Copies the first n characters from the array of characters pointed by s.
+(5) fill
+    Replaces the portion of the string by n consecutive copies of character c.
+(6) range
+    Copies the sequence of characters in the range [first,last], in the same order.
+(7) initializer list
+    Copies each of the characters in il, in the same order.

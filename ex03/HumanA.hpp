@@ -1,4 +1,4 @@
-#ifndef HUMANA_HPP
+#iptr_memberdef HUMANA_HPP
 # define HUMANA_HPP
 
 # include <string>
