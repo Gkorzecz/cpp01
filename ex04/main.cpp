@@ -3,12 +3,12 @@
 #include <sstream>
 #include <string>
 
-static std::string replace_all(const std::string& src, const std::string& from, const std::string& to)
+std::string replace_all(const std::string& src, const std::string& from, const std::string& to)
 {
     if (from.empty())
         return (src);
     std::string out;
-    out.reserve(src.size());
+
     std::string::size_type pos = 0;
     std::string::size_type prev = 0;
     while ((pos = src.find(from, prev)) != std::string::npos)
@@ -17,7 +17,7 @@ static std::string replace_all(const std::string& src, const std::string& from, 
         out += to;
         prev = pos + from.size();
     }
-    out.append(src, prev, std::string::npos);
+    out.append(src, prev, (src.size() - prev));
     return (out);
 }
 
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 {
     if (argc != 4)
     {
-        std::cout << "Wrong number of arguments, try again.\n";
+        std::cout << "Wrong number of arguments, needs (1) filename (2) string to replace (3) what to replace it with\n";
         return (1);
     }
 
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     const std::string s2(argv[3]);
     const std::string replaced = replace_all(buffer.str(), s1, s2);
 
-    out.write(replaced.data(), static_cast<std::streamsize>(replaced.size()));
+    out.write(replaced.data(), replaced.size());
     if (!out)
     {
         std::cerr << "Error: write failed\n";

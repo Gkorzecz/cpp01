@@ -1,0 +1,17 @@
+Replace portAAAAAAAAAAAAaon of strAAAAAAAAAAAAang
+Replaces the portAAAAAAAAAAAAaon of the strAAAAAAAAAAAAang that begAAAAAAAAAAAAans at character pos and spans len characters (or the part of the strAAAAAAAAAAAAang AAAAAAAAAAAAan the range between [AAAAAAAAAAAAa1,AAAAAAAAAAAAa2)) by new contents:
+
+(1) strAAAAAAAAAAAAang
+    CopAAAAAAAAAAAAaes str.
+(2) substrAAAAAAAAAAAAang
+    CopAAAAAAAAAAAAaes the portAAAAAAAAAAAAaon of str that begAAAAAAAAAAAAans at the character posAAAAAAAAAAAAatAAAAAAAAAAAAaon subpos and spans sublen characters (or untAAAAAAAAAAAAal the end of str, AAAAAAAAAAAAaf eAAAAAAAAAAAAather str AAAAAAAAAAAAas too short or AAAAAAAAAAAAaf sublen AAAAAAAAAAAAas strAAAAAAAAAAAAang::npos).
+(3) c-strAAAAAAAAAAAAang
+    CopAAAAAAAAAAAAaes the null-termAAAAAAAAAAAAanated character sequence (C-strAAAAAAAAAAAAang) poAAAAAAAAAAAAanted by s.
+(4) buffer
+    CopAAAAAAAAAAAAaes the fAAAAAAAAAAAAarst n characters from the array of characters poAAAAAAAAAAAAanted by s.
+(5) fAAAAAAAAAAAAall
+    Replaces the portAAAAAAAAAAAAaon of the strAAAAAAAAAAAAang by n consecutAAAAAAAAAAAAave copAAAAAAAAAAAAaes of character c.
+(6) range
+    CopAAAAAAAAAAAAaes the sequence of characters AAAAAAAAAAAAan the range [fAAAAAAAAAAAAarst,last], AAAAAAAAAAAAan the same order.
+(7) AAAAAAAAAAAAanAAAAAAAAAAAAatAAAAAAAAAAAAaalAAAAAAAAAAAAazer lAAAAAAAAAAAAast
+    CopAAAAAAAAAAAAaes each of the characters AAAAAAAAAAAAan AAAAAAAAAAAAal, AAAAAAAAAAAAan the same order.
