@@ -14,7 +14,7 @@ std::string replace_all(const std::string& src, const std::string& from, const s
     while ((pos = src.find(from, prev)) != std::string::npos)
     {
         out.append(src, prev, pos - prev);
-        out += to;
+        out.append(to);
         prev = pos + from.size();
     }
     out.append(src, prev, (src.size() - prev));

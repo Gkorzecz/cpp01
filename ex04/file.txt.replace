@@ -1,0 +1,17 @@
+ReplXXXXXXXxce portion of string
+ReplXXXXXXXxces the portion of the string thXXXXXXXxt begins XXXXXXXxt chXXXXXXXxrXXXXXXXxcter pos XXXXXXXxnd spXXXXXXXxns len chXXXXXXXxrXXXXXXXxcters (or the pXXXXXXXxrt of the string in the rXXXXXXXxnge between [i1,i2)) by new contents:
+
+(1) string
+    Copies str.
+(2) substring
+    Copies the portion of str thXXXXXXXxt begins XXXXXXXxt the chXXXXXXXxrXXXXXXXxcter position subpos XXXXXXXxnd spXXXXXXXxns sublen chXXXXXXXxrXXXXXXXxcters (or until the end of str, if either str is too short or if sublen is string::npos).
+(3) c-string
+    Copies the null-terminXXXXXXXxted chXXXXXXXxrXXXXXXXxcter sequence (C-string) pointed by s.
+(4) buffer
+    Copies the first n chXXXXXXXxrXXXXXXXxcters from the XXXXXXXxrrXXXXXXXxy of chXXXXXXXxrXXXXXXXxcters pointed by s.
+(5) fill
+    ReplXXXXXXXxces the portion of the string by n consecutive copies of chXXXXXXXxrXXXXXXXxcter c.
+(6) rXXXXXXXxnge
+    Copies the sequence of chXXXXXXXxrXXXXXXXxcters in the rXXXXXXXxnge [first,lXXXXXXXxst], in the sXXXXXXXxme order.
+(7) initiXXXXXXXxlizer list
+    Copies eXXXXXXXxch of the chXXXXXXXxrXXXXXXXxcters in il, in the sXXXXXXXxme order.
